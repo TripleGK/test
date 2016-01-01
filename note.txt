@@ -1,0 +1,11 @@
+// The list of Log level and name
+List<Logger> list = logContext.getLoggerList();
+for (Logger a:list) {
+  log.debug("Logger name = {}, Logger effective level = {}", a.getName(), a.getEffectiveLevel().toString());
+}
+
+
+
+// Log level change logic for logback
+LoggerContext logContext = (LoggerContext) LoggerFactory.getILoggerFactory();
+logContext.getLogger("org.springframework").setLevel(Level.valueOf("ERROR"));
