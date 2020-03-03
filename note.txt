@@ -9,3 +9,5 @@ for (Logger a:list) {
 // Log level change logic for logback
 LoggerContext logContext = (LoggerContext) LoggerFactory.getILoggerFactory();
 logContext.getLogger("org.springframework").setLevel(Level.valueOf("ERROR"));
+
+add new line
